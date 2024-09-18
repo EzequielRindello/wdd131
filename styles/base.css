@@ -1,4 +1,5 @@
 /* -------------------------------general------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +15,7 @@ a {
 .italic-text {
   font-style: italic;
 }
-.hidden{
+.hidden {
   display: none;
 }
 /* -------------------------------header------------------------------- */
