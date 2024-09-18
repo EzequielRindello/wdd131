@@ -6,6 +6,9 @@ function adjustMainPadding() {
 let lastScrollTop = 0;
 const header = document.querySelector(".header");
 
+let lastModifiedDate = document.lastModified;
+document.getElementById("lastModified").textContent = lastModifiedDate;
+
 window.addEventListener("scroll", function() {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
