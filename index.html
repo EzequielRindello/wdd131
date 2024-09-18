@@ -6,18 +6,27 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamental" />
     <meta name="author" content="Ezequiel Rindello" />
     <title>WDD 131 - Dynamic Web Fundamentals - Ezequiel Rindello</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/base.css" />
     <script src="./scripts/getdates.js" defer></script>
   </head>
   <body>
     <header class="header">
+      <nav class="hidden"></nav>
       <div>
         <h1 class="logo">
           WDD 131: Dynamic Web Fundamentals - <strong>Ezequiel Rindello</strong>
         </h1>
       </div>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn" aria-label="toggle navigation menu">
+      <label
+        class="menu-icon"
+        for="menu-btn"
+        aria-label="toggle navigation menu"
+      >
         <span class="navicon"></span>
       </label>
       <ul class="menu">
@@ -58,7 +67,7 @@
           <hr />
           <div class="card-info">
             <div>
-              <img src="./images/arg-flag.png" alt="Argentina Flag" />
+              <img src="./images/arg-flag.jpg" alt="Argentina Flag" />
               <p class="italic-text">2022 world cup winners</p>
             </div>
             <p>
@@ -88,5 +97,6 @@
       </p>
       <p class="italic-text">last modified: <span id="lastModified"></span></p>
     </footer>
+    <!-- <script src="./scripts/getdates.js" ></script> -->
   </body>
 </html>
