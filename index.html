@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 Activities</title>
-</head>
-<body>
-  <a href="./week01/basic-layout.html">week01</a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamental" />
+    <meta name="author" content="Ezequiel Rindello" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Ezequiel Rindello</title>
+    <link rel="stylesheet" href="./styles/base.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <h1 class="logo">
+          WDD 131: Dynamic Web Fundamentals - <strong>Ezequiel Rindello</strong>
+        </h1>
+      </div>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/ezequiel-rindello/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href=" https://byui.instructure.com" target="_blank">I-Learn</a>
+        </li>
+        <li>
+          <a
+            href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/14?lang=eng"
+            target="_blank"
+            >Scripture</a
+          >
+        </li>
+        <li><a href="#" target="_blank">Final Proyect</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="container">
+        <section class="card">
+          <h2>About Me</h2>
+          <div class="card-info">
+            <p>
+              Hello. My name is Ezequiel, I'm 24 years old and I'm learning to
+              program! I really like learning new things and enjoying good
+              music. In my free time I also enjoy playing video games, playing
+              sports and hanging out with my friends
+            </p>
+            <img src="/images/me.jpg" alt="myself picture" />
+          </div>
+          <h3>ARGENTINA</h3>
+          <hr />
+          <div class="card-info">
+            <div>
+              <img src="/images/arg-flag.png" alt="Argentina Flag" />
+              <p class="italic-text">2022 world cup winners</p>
+            </div>
+            <p>
+              Argentina features diverse landscapes, from Patagonia to tropical
+              rainforests. The country is the birthplace of tango and is
+              renowned for its beef and traditional asado. Notable landmarks
+              include the Devil’s Throat at Iguazu Falls, and Argentina is also
+              known for its unique wildlife, such as the Andean condor.
+            </p>
+          </div>
+        </section>
+        <section class="card">
+          <h2>Web Dev Resourses</h2>
+          <ul>
+            <li><a href="">Dev. Community</a></li>
+            <li><a href="">Smashing Magazine</a></li>
+            <li><a href="">CSS tricks</a></li>
+            <li><a href="">Chat GTP</a></li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <a href="./week01/basic-layout.html" target="_blank">week01</a>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> - Ezequiel Rindello, Argentina
+      </p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+  </body>
 </html>
