@@ -1,0 +1,40 @@
+{
+  "temples": [
+    {
+      "name": "Templo de Buenos Aires, Argentina",
+      "url": "https://www.churchofjesuschrist.org/imgs/a3454a8b72b4cc972b3898805ec69cc901a89170/full/320%2C/0/default"
+    },
+    {
+      "name": "Templo de Santiago, Chile",
+      "url": "https://www.churchofjesuschrist.org/imgs/a3454a8b72b4cc972b3898805ec69cc901a89170/full/320%2C/0/default"
+    },
+    {
+      "name": "Templo de Lima, Perú",
+      "url": "https://www.churchofjesuschrist.org/imgs/a3454a8b72b4cc972b3898805ec69cc901a89170/full/320%2C/0/default"
+    },
+    {
+      "name": "Templo de Bogotá, Colombia",
+      "url": "https://www.churchofjesuschrist.org/imgs/a3454a8b72b4cc972b3898805ec69cc901a89170/full/320%2C/0/default"
+    },
+    {
+      "name": "Templo de Ciudad de México, México",
+      "url": "https://www.churchofjesuschrist.org/imgs/a3454a8b72b4cc972b3898805ec69cc901a89170/full/320%2C/0/default"
+    },
+    {
+      "name": "Templo de Guayaquil, Ecuador",
+      "url": "https://www.churchofjesuschrist.org/imgs/a3454a8b72b4cc972b3898805ec69cc901a89170/full/320%2C/0/default"
+    },
+    {
+      "name": "Templo de San José, Costa Rica",
+      "url": "https://www.churchofjesuschrist.org/imgs/a3454a8b72b4cc972b3898805ec69cc901a89170/full/320%2C/0/default"
+    },
+    {
+      "name": "Templo de Curitiba, Brasil",
+      "url": "https://www.churchofjesuschrist.org/imgs/a3454a8b72b4cc972b3898805ec69cc901a89170/full/320%2C/0/default"
+    },
+    {
+      "name": "Templo de Caracas, Venezuela",
+      "url": "https://www.churchofjesuschrist.org/imgs/a3454a8b72b4cc972b3898805ec69cc901a89170/full/320%2C/0/default"
+    }
+  ]
+}
