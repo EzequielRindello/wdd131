@@ -112,4 +112,10 @@ figcaption {
   footer {
     flex-direction: column;
   }
+  .gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
