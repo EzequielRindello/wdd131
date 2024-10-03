@@ -1,6 +1,11 @@
+:root{
+  --maring--:0;
+  --paddig-:0;
+}
+
 * {
-  margin: 0;
-  padding: 0;
+  margin: var(--maring--);
+  padding: var(--paddig-);
   box-sizing: border-box;
 }
 body {
