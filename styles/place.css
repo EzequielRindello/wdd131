@@ -3,6 +3,10 @@
   --paddig-:0;
 }
 
+::after{
+  --really--:0;
+}
+
 * {
   margin: var(--maring--);
   padding: var(--paddig-);
