@@ -13,14 +13,14 @@ body {
   display: block;
 }
 header {
-  background-color: #232d4f ;
+  background-color: #232d4f;
   color: #ffffff;
   text-align: center;
   font-size: 2rem;
   padding: 15px;
 }
 footer {
-  background-color: #232d4f ;
+  background-color: #232d4f;
   color: #ffffff;
   font-size: 1.5rem;
   padding: 15px;
@@ -28,15 +28,15 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
-.data-section{
-  background-color: #354B6E ;
+.data-section {
+  background-color: #354b6e;
   color: #ffffff;
   text-align: center;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
-  border:solid #ffffff 1px;
+  border: solid #ffffff 1px;
 }
-h2{
+h2 {
   text-align: left;
   margin-left: -10px;
   margin-top: 10px;
@@ -44,19 +44,19 @@ h2{
   padding: 15px;
   color: #232d4f;
   background-color: #ffffff;
-  border:solid #232d4f 1px;
+  border: solid #232d4f 1px;
 }
-p{
+p {
   text-align: center;
   margin: 10px;
   padding: 5px;
 }
-#data{
+#data {
   position: absolute;
   top: 20vh;
   left: 10vh;
 }
-#weather{
+#weather {
   position: absolute;
   bottom: 10vh;
   right: 5vh;
@@ -65,7 +65,7 @@ p{
   .logo {
     font-size: 2rem;
   }
-  footer{
+  footer {
     font-size: 14px;
     flex-direction: column;
   }
@@ -74,5 +74,27 @@ p{
     height: 50vh;
     object-fit: cover;
     display: block;
+  }
+  #data,
+  #weather {
+    position: static !important;
+    margin: 20px 0;
+    width: 90%;
+  }
+  main {
+    display: grid;
+    place-items: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #data {
+    position: absolute;
+    top: 20vh;
+    left: 5vh;
+  }
+  #weather {
+    position: absolute;
+    bottom: 2vh;
+    right: 2vh;
   }
 }
