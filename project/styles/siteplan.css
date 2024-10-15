@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #f5ebdc;
+  --background--two: #efe0cc;
+  --color--one: #d72300;
+  --color--two: #5023144d;
+  --color--three: #000000de;
+  --text--color-one: #ffffff;
+  --text--color-two: #502314;
+  --text--color--three: #502314cc;
+}
+body {
+  font-family: "SUSE", sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main{
+  width: 80%;
+}
+.typography {
+  font-family: "Fredoka One", sans-serif;
+}
+header {
+  width: 100%;
+  color: #ffffff;
+  font-size: 1.55rem;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(0, 110, 182);
+}
+footer{
+  background-color: rgb(240, 240, 240);
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+p{
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+}
+h2{
+  font-size: 1.55rem;
+}
+.img-container{
+  display: flex;
+  justify-content: space-around;
+}
+.img-container img{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 10px;
+  min-width: 250px;
+}
+div{
+  margin: 3% 0%;
+}
+.one{
+  background-color: var(--background);
+  border-radius: 5px;
+}
+.two{
+ background-color: var(--color--one);
+ border-radius: 5px;
+ color: #ffffff;
+}
+.three{
+  background-color: var(--color--two);
+  border-radius: 5px;
+}
+.four{
+  background-color: var(--color--three);
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .img-container{
+    justify-content: center;
+    flex-direction: column;
+  }
+}
