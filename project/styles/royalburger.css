@@ -31,7 +31,8 @@ header {
   justify-content: space-around;
 }
 .logo {
-  width: 150px;
+  width: 200px;
+  margin-top: 10px;
 }
 header a {
   margin: 40px;
@@ -145,13 +146,13 @@ button:hover {
 figure {
   position: relative;
   left: 0;
-  width: 300%; 
+  width: 300%;
   animation: 20s slide infinite;
   height: 100%;
 }
 .slide {
   position: relative;
-  width: 33.33%; 
+  width: 33.33%;
   float: left;
   height: 100%;
 }
@@ -160,7 +161,7 @@ figure {
   font-size: 3em;
   width: 100%;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 60px;
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -171,11 +172,47 @@ figure {
 }
 
 /* footer */
-footer{
+footer {
   background-color: #502314;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
+.card-one,
+.card-two {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2%;
+  width: 80%;
+}
+.fotter-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fotter-card a {
+  padding: 10px;
+  margin-top: 10px;
+  color: #ffffff;
+  transition: 0.5s ease;
+}
+.fotter-card a:hover,
+i:hover {
+  color: #d72300;
+}
+hr {
+  width: 80%;
+}
+i {
+  font-size: 24px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
 @keyframes slide {
   0% {
     left: 0;
@@ -208,5 +245,10 @@ footer{
   }
   li {
     margin: 10px;
+  }
+  .card-one,
+  .card-two {
+    flex-direction: column;
+    justify-content: center;
   }
 }
