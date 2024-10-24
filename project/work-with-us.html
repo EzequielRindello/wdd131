@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="WDD 131 - Website Project" />
     <meta name="author" content="Ezequiel Rindello" />
-    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon" />
     <title>Royal Burger</title>
     <script src="scripts/royalburger.js" defer></script>
     <link rel="stylesheet" href="styles/royalburger.css" />
@@ -58,55 +58,44 @@
       </div>
     </header>
     <main>
-      <div class="slider">
-        <figure>
-          <div class="slide">
-            <h1>only for the crazy ones</h1>
-            <img src="images/slide-one.webp" alt="slide 1" />
-          </div>
-          <div class="slide">
-            <h1>taste of madness</h1>
-            <img src="images/slide-two.webp" alt="slide 2" />
-          </div>
-          <div class="slide">
-            <h1>you're sure?</h1>
-            <img src="images/slide-three.webp" alt="slide 3" />
-          </div>
-        </figure>
-      </div>
-      <h1 class="h1-pages">Promotions</h1>
-      <div class="promotions">
-        <div class="card">
-          <img src="images/promo-one.jfif" alt="promo" />
-          <h2>More Crunch, More Flavor!</h2>
+      <section>
+        <div>
+          <h1 class="h1-pages">Become a Royal Burger employee</h1>
+          <hr />
           <p>
-            Our crispiest burger just got even better. We've added a new layer
-            of flavor, and now onion rings take center stage, giving you more
-            crunch than ever before.
+            By completing this form, you'll be one step closer to joining our
+            team. Once you submit your information, you will receive an email
+            with more details on how to send your resume and schedule a short
+            online interview. We appreciate your interest in becoming part of
+            our family and are excited to get to know you better. Don't miss the
+            opportunity to take the next step in your career!
           </p>
+          <br /><br /><br /><br />
+          <div class="form-container">
+            <form class="form">
+              <div class="title">
+                Welcome,<br /><span>We can't wait to work with you!</span>
+              </div>
+              <input
+                class="input"
+                name="email"
+                placeholder="Email"
+                type="email"
+                required
+              />
+              <input
+                class="input"
+                name="fullname"
+                placeholder="Full Name"
+                type="text"
+                required
+              />
+              <button class="button-confirm">Work with us →</button>
+            </form>
+          </div>
+          <br><br><br><br>
         </div>
-        <div class="card">
-          <img src="images/promo-two.jfif" alt="promo one" />
-          <h2>Feast Like a King with the Classic Long!</h2>
-          <p>
-            Eat like a King at Royal King! Don’t miss out on the classic Long,
-            available in beef or chicken, at an unbeatable price for a
-            guaranteed flavor experience.
-          </p>
-        </div>
-        <div class="card">
-          <img src="images/promo-three.jfif" alt="promo two" />
-          <h2>Fresh Flavors Fit for Royalty!</h2>
-          <p>
-            Eat like a King at Royal King! Enjoy our fresh and delicious salad,
-            loaded with crisp veggies and your choice of grilled chicken or
-            beef.
-          </p>
-        </div>
-      </div>
-      <div class="app-card">
-        <img id="responsive-image" src="images/banner.PNG" alt="logo-app" />
-      </div>
+      </section>
     </main>
     <footer>
       <div class="card-one">
