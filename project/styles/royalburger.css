@@ -172,9 +172,8 @@ figure {
   width: 100%;
   text-align: center;
   margin-top: 60px;
-  color: white; /* Color del texto */
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9),
-    /* Sombra más desplazada y oscura */ 0 0 25px rgba(0, 0, 0, 0.6); /* Sombra difusa para un efecto de resplandor */
+  color: white;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9), 25px 25px 25px rgba(0, 0, 0, 0.6);
 }
 .slide img {
   width: 100%;
