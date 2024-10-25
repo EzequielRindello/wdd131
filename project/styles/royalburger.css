@@ -169,11 +169,14 @@ figure {
 .slide h1 {
   position: absolute;
   font-size: 3em;
-  width: 100%;
+  margin-left: 4%;
+  padding: 10px;
   text-align: center;
   margin-top: 60px;
   color: white;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9), 25px 25px 25px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 22, 40, 0.2);
+  border-radius: 24px;
 }
 .slide img {
   width: 100%;
