@@ -71,7 +71,6 @@ const longs = document.getElementById("longs");
 const salads = document.getElementById("salads");
 
 if (salads || longs || burgers) {
-
   async function getMenu() {
     try {
       const response = await fetch("./menu.json");
@@ -84,12 +83,14 @@ if (salads || longs || burgers) {
 
   function createMenu(items) {
     items.forEach((item) => {
-
       const menuItem = document.createElement("div");
+
+      const itemBr = document.createElement("br");
 
       const itemImg = document.createElement("img");
       itemImg.src = item.url;
       itemImg.alt = item.name;
+      itemImg.loading = "lazy";
 
       const itemTitle = document.createElement("h3");
       itemTitle.textContent = item.name;
@@ -110,6 +111,89 @@ if (salads || longs || burgers) {
       }
     });
   }
-  
+
   getMenu();
+
+  ScrollReveal().reveal(".h1-pages", {
+    origin: "left",
+    distance: "40px",
+    duration: 800,
+    delay: 300,
+    opacity: 0,
+  });
+  ScrollReveal().reveal("#burgers", {
+    origin: "right",
+    distance: "40px",
+    duration: 800,
+    opacity: 0,
+    interval: 200,
+  });
+  ScrollReveal().reveal("#longs", {
+    origin: "bottom",
+    distance: "50px",
+    duration: 900,
+    delay: 300,
+    opacity: 0,
+  });
+  ScrollReveal().reveal("#salads", {
+    origin: "bottom",
+    distance: "20px",
+    duration: 800,
+    opacity: 0,
+    interval: 150,
+  });
+}
+
+// intit ScrollReveal and config animations
+const slider = document.querySelector(".slider");
+if (slider) {
+  ScrollReveal().reveal(".h1-pages", {
+    origin: "left",
+    distance: "40px",
+    duration: 800,
+    delay: 300,
+    opacity: 0,
+  });
+  ScrollReveal().reveal(".card", {
+    origin: "right",
+    distance: "40px",
+    duration: 800,
+    opacity: 0,
+    interval: 200,
+  });
+  ScrollReveal().reveal(".app-card", {
+    origin: "bottom",
+    distance: "50px",
+    duration: 900,
+    delay: 300,
+    opacity: 0,
+  });
+  ScrollReveal().reveal(".fotter-card", {
+    origin: "bottom",
+    distance: "20px",
+    duration: 800,
+    opacity: 0,
+    interval: 150,
+  });
+}
+
+// toastify
+const myForm = document.getElementById("myForm");
+if (myForm) {
+  myForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    
+    Toastify({
+      text: "Form sent successfully!",
+      duration: 6000,
+      gravity: "top",
+      position: "center",
+      backgroundColor: "#4caf50",
+      className: "info",
+    }).showToast();
+
+    setTimeout(function () {
+      window.location.href = "royalburger.html";
+    }, 5000);
+  });
 }

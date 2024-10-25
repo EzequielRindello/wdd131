@@ -22,6 +22,14 @@ ul {
 body {
   background-color: #efe0cc;
 }
+.h1-pages,
+.slide,
+.card,
+.app-card,
+.fotter-card {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
 /* header */
 header {
   height: 82px;
@@ -215,7 +223,10 @@ figure {
   object-fit: cover;
   transition: 0.2s ease;
 }
-.card:hover {
+.card:hover,
+#burgers img:hover,
+#longs img:hover,
+#salads img:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -339,6 +350,36 @@ section hr {
 #longs img,
 #salads img {
   width: 200px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+#burgers,
+#longs,
+#salads {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 0%;
+}
+#burgers div,
+#longs div,
+#salads div {
+  flex: 0 1 calc(33.333% - 8px);
+  min-height: 100px;
+  padding: 20px;
+  text-align: center;
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#burgers strong,
+#longs strong,
+#salads strong {
+  margin: 10px;
 }
 
 /* footer */
@@ -432,5 +473,21 @@ i {
   }
   .movile-menu a {
     font-size: 18px;
+  }
+  .movile-menu button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  .movile-menu button a {
+    color: #d72300;
+  }
+  .movile-menu button a:hover {
+    color: #fff;
   }
 }
