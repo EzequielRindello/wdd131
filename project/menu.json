@@ -1,0 +1,70 @@
+{
+  "items": [
+    {
+      "name": "Classic Cheeseburger",
+      "url": "images/burger-one.webp",
+      "type": "burger",
+      "price": 8.99
+    },
+    {
+      "name": "Double Bacon Burger",
+      "url": "images/burger-two.webp",
+      "type": "burger",
+      "price": 10.99
+    },
+    {
+      "name": "Mushroom Swiss Burger",
+      "url": "images/burger-three.webp",
+      "type": "burger",
+      "price": 9.99
+    },
+    {
+      "name": "BBQ Ranch Burger",
+      "url": "images/burger-four.jfif",
+      "type": "burger",
+      "price": 11.49
+    },
+    {
+      "name": "Spicy Jalapeño Burger",
+      "url": "images/burger-five.jfif",
+      "type": "burger",
+      "price": 9.49
+    },
+    {
+      "name": "Veggie Delight Burger",
+      "url": "images/burger-six.jfif",
+      "type": "burger",
+      "price": 7.99
+    },
+    {
+      "name": "Grilled Chicken Long",
+      "url": "images/long-one.jfif",
+      "type": "long",
+      "price": 8.49
+    },
+    {
+      "name": "BBQ Beef Long",
+      "url": "images/long-two.jfif",
+      "type": "long",
+      "price": 9.49
+    },
+    {
+      "name": "Pulled Pork Long",
+      "url": "images/long-three.jfif",
+      "type": "long",
+      "price": 8.99
+    },
+    {
+      "name": "Caesar Salad",
+      "url": "images/salad-one.jfif",
+      "type": "salad",
+      "price": 6.99
+    },
+    {
+      "name": "Greek Salad",
+      "url": "images/salad-two.jfif",
+      "type": "salad",
+      "price": 7.49
+    }
+  ]
+}

@@ -63,3 +63,53 @@ document.addEventListener("DOMContentLoaded", function () {
     code.textContent = randomCode;
   }
 });
+
+// dinamic menu
+
+const burgers = document.getElementById("burgers");
+const longs = document.getElementById("longs");
+const salads = document.getElementById("salads");
+
+if (salads || longs || burgers) {
+
+  async function getMenu() {
+    try {
+      const response = await fetch("./menu.json");
+      const data = await response.json();
+      createMenu(data.items);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  function createMenu(items) {
+    items.forEach((item) => {
+
+      const menuItem = document.createElement("div");
+
+      const itemImg = document.createElement("img");
+      itemImg.src = item.url;
+      itemImg.alt = item.name;
+
+      const itemTitle = document.createElement("h3");
+      itemTitle.textContent = item.name;
+
+      const itemPrice = document.createElement("strong");
+      itemPrice.textContent = `$${item.price}`;
+
+      menuItem.appendChild(itemImg);
+      menuItem.appendChild(itemPrice);
+      menuItem.appendChild(itemTitle);
+
+      if (item.type === "burger" && burgers) {
+        burgers.appendChild(menuItem);
+      } else if (item.type === "long" && longs) {
+        longs.appendChild(menuItem);
+      } else if (item.type === "salad" && salads) {
+        salads.appendChild(menuItem);
+      }
+    });
+  }
+  
+  getMenu();
+}
