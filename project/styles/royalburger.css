@@ -10,7 +10,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+label {
   font-family: "Fredoka One", sans-serif;
 }
 p,
@@ -171,8 +172,9 @@ figure {
   width: 100%;
   text-align: center;
   margin-top: 60px;
-  color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: white; /* Color del texto */
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9),
+    /* Sombra más desplazada y oscura */ 0 0 25px rgba(0, 0, 0, 0.6); /* Sombra difusa para un efecto de resplandor */
 }
 .slide img {
   width: 100%;
